@@ -27,6 +27,10 @@ body {
     flex-direction: column;
 }
 
+.card {
+    
+}
+
 .hero-img {
     max-width: 400px;
     align-self: center;
@@ -34,5 +38,61 @@ body {
 
 .hero > h1 {
     font-size: 36px;
-    font-weight: bold   ;
+    font-weight: bold;
+}
+
+.card {
+    width: 176px;
+}
+
+.card-img {
+    background-image: url(./images/swimmer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 235px;
+    padding: 1px 5px;
+}
+
+.card-img > button {
+    padding: 3px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.card-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-info > h5, .star-img {
+    margin-right: 10px;
+}
+
+.star-img {
+    max-width: 14px;
+}
+
+.star-rate {
+    color: #222222;
+    font-weight: 300;
+}
+
+.star-num, .star-country {
+    font-weight: 400;
+    color: #E5E5E5;
+}
+
+.card > p {
+    color: #222222;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.card > h4 {
+    font-size: 12px;
+}
+
+.person {
+    font-weight: 300;
 }
