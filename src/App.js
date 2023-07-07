@@ -9,6 +9,7 @@ import data from "./components/data"
 function App() {
   const cards = data.map(card => {
     return <Card 
+            key={card.id}
             id = {card.id}
             title = {card.title}
             description= {card.description}
@@ -25,7 +26,9 @@ function App() {
     <div className="App">
       <Navigation /> 
       <Hero />
-      {cards}
+      <section className="cards-list">
+        {cards}
+      </section>
     </div>
   );
 }

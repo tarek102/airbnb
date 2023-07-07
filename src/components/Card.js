@@ -1,10 +1,19 @@
 import React from 'react'; 
 import star from '../images/Star 1.png'
-import swimmer from '../images/katie-zaferes.png'
 
-export const Card = ({coverImg, title, price, reviewCount, rating, location}) => {
+export const Card = ({coverImg, openSpots, title, price, reviewCount, rating, location}) => {
+
+  let badgeText
+    if (openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (location === "Online") {
+        badgeText = "ONLINE"
+    }
+
+
   return (
     <div className='card'>
+        {badgeText && <div className='card-badge'>{badgeText}</div>}
         <div className='card-img'>
             <img alt='swimmer' src={`/images/${coverImg}`}></img>
         </div>
