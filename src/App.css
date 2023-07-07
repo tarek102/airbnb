@@ -41,12 +41,9 @@ body {
     width: 176px;
 }
 
-.card-img {
-    background-image: url(./images/swimmer.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 235px;
-    padding: 1px 5px;
+.card-img > img {
+    width: 100%;
+    border-radius: 9px;
 }
 
 .card-img > button {
